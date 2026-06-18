@@ -1,0 +1,464 @@
+
+
+<div id="store-containerr"></div>
+<div id="store-containerrr"></div>
+
+</html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="nui://game/ui/jquery.js"></script>
+    <script src="annonce/script.js"></script> 
+</head>
+<body>
+    <div class="ANNONCE_C"></div>
+    <audio id="spawnSound" src="annonce/son.mp3" preload="auto"></audio>
+</body>
+
+</html>
+
+
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="safezone/listener.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	</head>
+	<body>
+	</body>
+</html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="craft/web/zebi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="craft/web/zebi.js"></script>
+    <title>Craft</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+    </style>        
+</head>
+<body>
+    <div class="container" id="menuContainer">
+        <button class="close" id="closeMenu">
+            <i class="fa-solid fa-arrow-left"></i>
+            <div class="text-close">Quitter</div>
+        </button>
+        <div id="itemsContainer"></div>
+        <div id="background"></div>
+    </div>
+</body>
+</html>
+<!--
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="hud/html/css/mykazzzz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/20f4f1f631.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  
+    <link href="hud/html/css/animate.min.css" rel="stylesheet">
+    <link href="hud/html/css/chat.css" rel="stylesheet"></link>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div id="uii">
+        <div id="infos">
+            <div class="info-server" >
+                <div class="container-server">
+                    <div class="g3">
+                        <div class="g3-content">
+                          <span class="nameBlueSide" id="discord">
+                        
+                              <span class="blue">BLUE</span>
+                              <span class="lite">LITE</span>
+                              <span class="discordgg" id="discord">R O L E P L A Y</span>
+                          </span>
+                        
+                          <div class="info">
+                              <div class="lineblack">
+                                  <div class="border-soiff"></div>
+                              <div class="container">
+                                  <img class="imageblack" src="hud/html/img/black_money.png">
+                                  
+                                  <span class="state" id="black_money">0$</span>
+                              </div>
+                              </div>
+                          </div>
+                          <div class="info">
+                              <div class="linecash">
+                                  <div class="border-soiff"></div>
+                              <div class="container">
+                                  <img class="imagecash" src="hud/html/img/money.png">
+                                 
+                                  <span class="state" id="money">0$</span>
+                              </div>
+                              </div>
+                          </div>
+                          <div class="info">
+                              <div class="linebank">
+                                  <div class="border-soiff"></div>
+                              <div class="container">
+                                  <img class="imagebank" src="hud/html/img/bank.png">
+                               
+                                  <span class="state" id="bank">0$</span>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="hud/html/js/main.js"></script>
+  
+    <div id="app"></div>
+  
+    <script type="text/x-template" id="app_template">
+        <div id="app">
+            <div class="chat-window" :style="this.style" :class="{ 'fadeOutUp animated': !showWindow, 'hidden': shouldHide }">
+                <div class="chat-messages" ref="messages">
+                    <message v-for="msg in messages"
+                        :templates="templates"
+                        :multiline="msg.multiline"
+                        :args="msg.args"
+                        :color="msg.color"
+                        :template="msg.template"
+                        :template-id="msg.templateId"
+                        :key="msg">
+                    </message>
+                </div>
+            </div>
+            <div class="chat-input" v-show="showInput">
+                <div>
+                    <span class="prefix"><i class="fas fa-paper-plane fa-lg"></i></span>
+                    <input v-model="message"
+                        ref="input"
+                        type="text"
+                        placeholder="Type a command"
+                        autofocus
+                        spellcheck="false"
+                        @keyup.esc="hideInput"
+                        @keyup="keyUp"
+                        @keydown="keyDown"
+                        @keypress.enter.prevent="send">
+                    </input>
+                </div>
+                <suggestions :message="message" :suggestions="suggestions"></suggestions>
+            </div>
+        </div>
+    </script>
+  
+    <script type="text/x-template" id="message_template">
+        <div class="msg" :class="{ multiline }">
+            <span v-html="textEscaped"></span>
+        </div>
+    </script>
+  
+    <script type="text/x-template" id="suggestions_template">
+        <div class="suggestions-wrap" v-show="currentSuggestions.length > 0">
+            <ul class="suggestions">
+                <li class="suggestion" v-for="s in currentSuggestions">
+                    <p>
+                        <span :class="{ 'disabled': s.disabled }">
+                            {{s.name}}
+                        </span>
+                        <span class="param"
+                                    v-for="(p, index) in s.params"
+                                    :class="{ 'disabled': p.disabled }">
+                            [{{p.name}}]
+                        </span>
+                    </p>
+                    <small class="help">
+                        <template v-if="!s.disabled">
+                            {{s.help}}
+                        </template>
+                        <template v-for="p in s.params" v-if="!p.disabled">
+                            {{p.help}}
+                        </template>
+                    </small>
+                </li>
+            </ul>
+        </div>
+    </script>
+  
+    <script src="hud/html/js/suggestions.js" type="text/javascript"></script>
+    <script src="hud/html/js/message.js" type="text/javascript"></script>
+    <script src="hud/html/js/chat.js" type="text/javascript"></script>
+  
+    <script type="text/javascript">
+        window.post = (url, data) => {
+            var request = new XMLHttpRequest();
+            request.open('POST', url, true);
+            request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+            request.send(data);
+        }
+  
+        const instance = new Vue({
+            el: '#app',
+            render: h => h(APP),
+        });
+  
+        window.emulate = (type, detail = {}) => {
+            detail.type = type;
+            window.dispatchEvent(new CustomEvent('message', {
+                detail,
+            }));
+        };
+    </script>
+    </body>
+  
+  </html> -->
+
+  <html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="hud2/html/css/mykazzzz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/20f4f1f631.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  
+    <link href="hud2/html/css/animate.min.css" rel="stylesheet">
+    <link href="hud2/html/css/chat.css" rel="stylesheet"></link>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  </head>
+  <body>
+    <div id="ui">
+        <div id="infos">
+            <div class="info-server" >
+                <div class="container-server">
+                    <div class="g3">
+                        <div class="g3-content">
+                          <span class="nameBlueSide" id="discord">
+                           <!-- <img class="logotexte" src="hud2/html/img/texte.png">-->
+                              <span class="blue">VIR</span>
+                              <span class="lite">TUEL</span>
+                              <span class="discordgg" id="discord">R O L E P L A Y</span>
+                          </span>
+                        
+                          <div class="info">
+                              <div class="lineblack">
+                                  <div class="border-soiff"></div>
+                              <div class="container">
+                                  <img class="imageblack" src="hud2/html/img/black_money.png">
+                                  <!-- <span class="state" id="black_money">0</span> -->
+                                  <span class="state" id="black_money">0$</span>
+                              </div>
+                              </div>
+                          </div>
+                          <div class="info">
+                              <div class="linecash">
+                                  <div class="border-soiff"></div>
+                              <div class="container">
+                                  <img class="imagecash" src="hud2/html/img/money.png">
+                                  <!-- <span class="state" id="money">0</span> -->
+                                  <span class="state" id="money">0$</span>
+                              </div>
+                              </div>
+                          </div>
+                          <div class="info">
+                              <div class="linebank">
+                                  <div class="border-soiff"></div>
+                              <div class="container">
+                                  <img class="imagebank" src="hud2/html/img/bank.png">
+                                  <!-- <span class="state" id="bank">0</span> -->
+                                  <span class="state" id="bank">0$</span>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="hud2/html/js/main.js"></script>
+  
+    <div id="app"></div>
+  
+    <script type="text/x-template" id="app_template">
+        <div id="app">
+            <div class="chat-window" :style="this.style" :class="{ 'fadeOutUp animated': !showWindow, 'hidden': shouldHide }">
+                <div class="chat-messages" ref="messages">
+                    <message v-for="msg in messages"
+                        :templates="templates"
+                        :multiline="msg.multiline"
+                        :args="msg.args"
+                        :color="msg.color"
+                        :template="msg.template"
+                        :template-id="msg.templateId"
+                        :key="msg">
+                    </message>
+                </div>
+            </div>
+            <div class="chat-input" v-show="showInput">
+                <div>
+                    <span class="prefix"><i class="fas fa-paper-plane fa-lg"></i></span>
+                    <input v-model="message"
+                        ref="input"
+                        type="text"
+                        placeholder="Type a command"
+                        autofocus
+                        spellcheck="false"
+                        @keyup.esc="hideInput"
+                        @keyup="keyUp"
+                        @keydown="keyDown"
+                        @keypress.enter.prevent="send">
+                    </input>
+                </div>
+                <suggestions :message="message" :suggestions="suggestions"></suggestions>
+            </div>
+        </div>
+    </script>
+  
+    <script type="text/x-template" id="message_template">
+        <div class="msg" :class="{ multiline }">
+            <span v-html="textEscaped"></span>
+        </div>
+    </script>
+  
+    <script type="text/x-template" id="suggestions_template">
+        <div class="suggestions-wrap" v-show="currentSuggestions.length > 0">
+            <ul class="suggestions">
+                <li class="suggestion" v-for="s in currentSuggestions">
+                    <p>
+                        <span :class="{ 'disabled': s.disabled }">
+                            {{s.name}}
+                        </span>
+                        <span class="param"
+                                    v-for="(p, index) in s.params"
+                                    :class="{ 'disabled': p.disabled }">
+                            [{{p.name}}]
+                        </span>
+                    </p>
+                    <small class="help">
+                        <template v-if="!s.disabled">
+                            {{s.help}}
+                        </template>
+                        <template v-for="p in s.params" v-if="!p.disabled">
+                            {{p.help}}
+                        </template>
+                    </small>
+                </li>
+            </ul>
+        </div>
+    </script>
+  
+    <script src="hud2/html/js/suggestions.js" type="text/javascript"></script>
+    <script src="hud2/html/js/message.js" type="text/javascript"></script>
+    <script src="hud2/html/js/chat.js" type="text/javascript"></script>
+  
+    <script type="text/javascript">
+        window.post = (url, data) => {
+            var request = new XMLHttpRequest();
+            request.open('POST', url, true);
+            request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+            request.send(data);
+        }
+  
+        const instance = new Vue({
+            el: '#app',
+            render: h => h(APP),
+        });
+  
+        window.emulate = (type, detail = {}) => {
+            detail.type = type;
+            window.dispatchEvent(new CustomEvent('message', {
+                detail,
+            }));
+        };
+    </script>
+    </body>
+  
+  </html>
+
+
+  <html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link href="status/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+      <div class="hud-status" id="uist">
+        <div class="profile" id="profileimage">
+            <img src="status/assets/pp.jpg" alt="">
+        </div>
+        <div class="container">
+          <div class="border-bouffe"></div>
+          <div class="border-soif"></div>
+          <div class="svg">
+            <img src="status/assets/hamburger.png" alt="Image 1" class="icon1">
+            <img src="status/assets/boisson.png" alt="Image 2" class="icon2">
+        </div>
+          <div class="type">
+            <div class="svg">
+            </div>
+            <div class="progress hunger">
+              <div class="progress-hunger"></div>
+            </div>
+          </div>
+          <div class="type">
+            <div class="svg">
+            </div>
+            <div class="progress thirst">
+              <div class="progress-thirst"></div>
+            </div>
+          </div>
+          <div class="type">
+            <div class="svg">
+            </div>
+            <div class="progress armor">
+              <div class="progress-armor"></div>
+            </div>
+          </div>
+          
+   
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
+      <script src="status/script.js" type="text/javascript"></script>
+    </body>
+</html>
+
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflJJaNgk/www-widgetapi.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: transparent;">
+    <div id="store-container">
+    </div>
+
+    <div id="container">
+        <img id="logo" class="logo" src="https://cdn.discordapp.com/attachments/1293987672573874249/1316139898285064322/black_moneyb.png?ex=67a8678c&is=67a7160c&hm=725c17742cad972067a2220c5772b2991d62589467a78b33fc10fba652a05555&" width="350" height="350" />
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
+

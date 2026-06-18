@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'Circular';
+  src: url("./fonts/Circular-Bold.woff2") format("woff2"), url("./fonts/Circular-Bold.woff") format("woff"), url("./fonts/Circular-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circular';
+  src: url("./fonts/Circular-Book.woff2") format("woff2"), url("./fonts/Circular-Book.woff") format("woff"), url("./fonts/Circular-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+
+
+body {
+  font-family: 'Circular', sans-serif;
+  font-weight: normal;
+  overflow: hidden;
+  height: 100%; }
+
+.test {
+  position: relative;
+  bottom: 0;
+  right: 0; 
+}
+
+.hud-status {
+  position: relative;
+  bottom: 10px;
+  left: 120px;
+  width: 400px; 
+}
+
+  .hud-status .profile {
+    position: relative;
+    z-index: 1;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 0%;
+    overflow: hidden; 
+  }
+
+  .hud-status .container {
+    
+    position: absolute;
+    left: 550px;
+    bottom: -100px;
+    width: 50px;
+    height: 60px;
+    padding: 2px 20px 12px 80px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(24, 27, 32, 0.0);
+    -webkit-backdrop-filter: blur(4px);
+    transform: rotate(-180deg); 
+    margin-left: 10px;
+
+    
+    border-radius: 5px; 
+    
+  }
+
+    .hud-status .container .type {
+      width: 23px;
+      height: 8px;
+      margin: -2px; 
+      padding-left: 20px;
+    }
+
+      .hud-status .container .type .svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0;
+        width: 0px;
+        text-align: center; 
+      }
+	
+      .hud-status .container .type .progress {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 30px; /* Ajoutez une marge entre les barres si nécessaire */
+        width: calc(100% + 7px); /* La largeur est calculée en tenant compte de la marge */
+        height: 18px; /* Hauteur de la barre de progression */
+        opacity: 1.0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+
+      .hunger {
+        position: absolute;
+        width: 10px;
+        height: 40px;
+        right: 168px;
+        top: -404px;
+
+        background-color: rgba(5, 239, 99, 0.253);
+      }
+      
+		.thirst {
+            background-color: rgba(5, 149, 245, 0.164);
+            position: absolute;
+            width: 10px;
+            height: 40px;
+            right: 338px;
+            top: -404px;
+
+          }
+
+          .armor {
+            background-color: rgba();
+          }
+			
+        .hud-status .container .type .progress div {
+          display: inline-block;
+          height:100%;
+		  width: 100%;
+		  opacity: 0.8;
+          border-radius: 10px; 
+          
+        }
+
+
+        .hunger div {
+          background-color: #7ff568;
+        }
+
+          .thirst div {
+            background-color: #0183fd;
+          }
+
+
+          .armor div {
+            background-color: #0183fd00;
+          }
+
+		  
+  .hud-status #hour {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    width: 170px;
+    right: 0;
+    top: -15px; 
+  }
+
+  .hud-status .notification {
+    display: none;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    line-height: 21px;
+    background-color: #EE5253;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    z-index: 2;
+    border-radius: 50%;
+    top: -7px;
+    left: 0; 
+  }
+
+  .hud-status .icons {
+    position: relative;
+    z-index: 2;
+    right: 0;
+    top: -16px; }
+
+    .border-bouffe {
+      position: absolute;
+      right: 130px; /* 130*/ 
+      top:-410px; /* -925   */ 
+      height: 30px;
+      width: 150px;
+      background-color: #303030;
+      box-shadow: 0 0 5px #303030;
+      border-radius: 10px;
+    }
+
+    .border-soif {
+      position: absolute;
+      right: 300px; /* 300   */ 
+      top:-410px; /* -925   */ 
+      height: 30px;
+      width: 150px;
+      background-color: #303030;
+      box-shadow: 0 0 5px #303030;
+      border-radius: 10px;
+    }
+
+    .svg .icon1 {
+      position: absolute;
+      width: 20px;
+      right: 140px;
+      height: 20px;
+        top: -404px; /* -394px - 10 */
+      transform: rotate(-180deg); 
+      fill: red;
+  }
+  
+  .svg .icon2 {
+    position: absolute;
+      width: 20px;
+        top: -404px; /* -394px - 10 */
+      right: 310px;
+      height: 20px;
+      transform: rotate(180deg); 
+
+  }

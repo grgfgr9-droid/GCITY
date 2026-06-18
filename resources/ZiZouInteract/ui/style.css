@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Prompt);
+.container,.container .INPUT_CONTEXT{
+    font-family:Circular,Arial,Helvetica,sans-serif
+}
+.container{
+    position:absolute;
+    font-size:1.35vh;
+    color:#fff;
+    background-color:#17191daa;
+    padding:.8vh;
+    border-radius:4px;
+    display:flex;
+    flex-direction:column;
+    border-left:.4vh solid var(--couleur);
+}
+.container .INPUT_CONTEXT{
+    position:relative;
+    display:inline-block;
+    padding:3.5px 7px;
+    border-radius:2px;
+    top:-2px;
+    color:#000;
+    background:#fff;
+    font-weight:730;
+    font-size:11px
+}
+.container-show{
+    animation:.3s ease-in-out forwards show
+}
+.container-hide{
+    animation:.3s ease-in-out forwards leave
+}
+@keyframes show{
+    from{
+        opacity:0;
+        transform:translateX(-50%) translateY(10vw) scale(.5)
+    }
+}
+@keyframes leave{
+    to{
+        opacity:0;
+        transform:translateX(-50%) translateY(10vw) scale(.5)
+    }
+}
+ :root {
+     --couleur: #006eff80;
+}

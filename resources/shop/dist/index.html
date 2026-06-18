@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supérette</title>
+    <link rel="stylesheet" href="src.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Teko:wght@300..700&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="main">
+        <div class="header">
+          <div class="logo-container">
+            <img
+              src="https://i.postimg.cc/nztpmPJ9/image.png"
+              alt="Logo"
+              class="header-logo"
+            />
+          </div>
+          <div class="product-list-header">
+            <img src="https://i.postimg.cc/gjq9Bf0W/image-removebg-preview-41.png" alt="Liste des produits" class="product-list-icon" />
+            <h3 class="product-list-title">Liste des produits</h3>
+          </div>          
+          <div class="info-container">
+            <strong class="info-title">Information</strong>
+            <p class="info-text">
+              Ce menu est dédié aux shops et<br />
+              permet de payer vos articles rapidement et facilement.
+            </p>
+          </div>                 
+          <img src="assets/perso.png" alt="perso" class="perso">
+          <div class="search-container">
+            <img src="https://i.postimg.cc/dtLDp6Yy/image-removebg-preview-42.png" alt="Recherche" class="search-icon" />
+            <input type="text" placeholder="Rechercher un article" class="search-bar" />
+          </div>      
+        <div class="sidebar">
+          <button id="food" class="category-btn" style="display: none">
+            <img
+              src="assets/aaa.png"
+              alt="Nourriture Logo"
+              class="category-logo"
+            />
+            Nourriture
+          </button>
+          <button id="divers" class="category-btn" style="display: none">
+            <img src="assets/aaa.png" alt="Divers Logo" class="category-logo" />
+            Divers
+          </button>
+
+          <button id="armes" class="category-btn" style="display: none">
+            <img src="assets/aaa.png" alt="Armes Logo" class="category-logo" />
+            Armes
+          </button>
+          <button id="munitions" class="category-btn" style="display: none">
+            <img
+              src="assets/aaa.png"
+              alt="Munitions Logo"
+              class="category-logo"
+            />
+            Munitions
+          </button>
+
+          <button id="props" class="category-btn" style="display: none">
+            <img src="assets/aaa.png" alt="Props Logo" class="category-logo" />
+            Props
+          </button>
+
+          <button id="illegalitem" class="category-btn" style="display: none">
+            <img src="assets/aaa.png" alt="Props Logo" class="category-logo" />
+            Outils
+          </button>
+          <button id="exit" class="quit-btn">
+            <!-- <img src="assets/quit.png" alt="Quit Logo" class="quit-logo" /> -->
+            <!-- <i class="bx bxs-arrow-to-left"></i> -->
+            Quitter
+          </button>
+        </div>
+        <div class="items">
+          <button class="item">
+            <img src="assets/bread.png" alt="Pain" />
+            <div class="item-name">
+              <div class="item-price">$10</div>
+              Pain
+            </div>
+          </button>
+          <button class="item">
+            <img src="assets/cola.png" alt="Eau" />
+            <div class="item-name">
+              <div class="item-price">$10</div>
+              Eau
+            </div>
+          </button>
+        </div>
+        <div class="cart">
+          <h3 class="cart-title"><i class="bx bx-basket"></i> Produits du Panier :</h3>
+          <div class="cart-item-list">
+            <!-- Les items seront ajoutés dynamiquement ici -->
+          </div>
+          <div class="cart-total-and-button">
+            <div class="total">
+              <strong>Total :</strong> <span class="total-price">$0</span>
+            </div>
+            <button id="totalid" class="checkout-btn">
+              <strong class="checkout-text">Payer</strong>
+            </button>
+          </div>        
+        
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

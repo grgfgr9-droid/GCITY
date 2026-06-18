@@ -1,0 +1,448 @@
+/*Line*/
+.linetop {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    width:60px;
+	height:20px;
+    font-weight: 900;
+    
+}
+
+/*Line*/
+.linecash {
+    position: absolute;
+    right: -45px;
+    margin-top: -20px;
+    top: -40px;
+    width: 3px;
+    height: 17px;
+
+
+	border-radius: 100px;
+}
+
+.linebank {
+    position: absolute;
+    right: -45px;
+    margin-top: -30px;
+    top: -30px;
+    width: 3px;
+    height: 17px;
+    font-weight: 900;
+
+    border-radius: 100px;
+
+}
+.lineblack {
+    position: absolute;
+    right: -45px;
+    margin-top: -18px;
+    top: -43px;
+    width: 3px;
+    height: 17px;
+
+
+    border-radius: 100px;
+}
+
+  .border-soiff {
+    position: absolute;
+    right: 0px;
+    top:-5px;
+    height: 35px;
+    width: 150px;
+    background: linear-gradient(135deg, #00f0ff1f, #00eeff41, #00eeff6e);
+
+
+    border: 1px solid #00f0ff8a;
+
+    box-shadow: 0 0 5px #00f0ff8a;
+    border-radius: 35px;
+  }
+
+
+#store-container {
+    position: absolute;
+    display: none;
+    width: 550px;
+    height: 350px;
+    bottom: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+
+}
+
+#container {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    opacity: 0;
+    right: calc(50% - 175px);
+    top: calc(50% - 175px);
+    -webkit-filter: drop-shadow(0 3px 10px #ccc6be);
+    filter: drop-shadow(0 5px 12px #ccc6be);
+}
+
+#store2-container {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0px;
+}
+
+
+#infos {
+    position: absolute;
+    top: 34px;
+    right: 10px;
+    width: 180px;
+    border-radius: 0px;
+}
+
+.info {
+    position: relative;
+    margin-right: 15px;
+    width: 180px;
+    height: 32px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    
+}
+
+.info .container {
+    text-align: right;
+    margin-right: 15px;
+    justify-content: flex-end;
+}
+
+.info .container img.badge {
+    height: 22px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.info .container .badge {
+    position: absolute;
+    right: -5px;
+    margin-top: 5px;
+}
+
+.info-server {
+    position: relative;
+    top: 20px;
+    right: 55px;
+    width: 210px;
+    height: 60px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    border-radius: 100px;
+}
+
+.container-server-top {
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.container-server {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0;
+    align-items: center;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.g1 { 
+    grid-area: 1 / 1 / 2 / 4;
+    display: table;
+}
+
+.g2 { 
+    grid-area: 1 / 4 / 2 / 7;
+    display: table;
+}
+
+.g3 { 
+    grid-area: 2 / 1 / 3 / 7;
+    display: table;
+    text-align: left;
+
+}
+
+.g4 { 
+    grid-area: 1 / 7 / 3 / 8;
+    display: table;
+}
+
+.g4 img {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.g1 .badge, .g2 .badge {
+    margin-right: 5px;
+    width: 60px;
+}
+
+.g1-content, .g2-content, .g3-content, .g4-content {
+    margin-top: 1px;
+
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(./fonts/rubik-b35f96c1);
+}
+
+@font-face {
+    font-family: Teko;
+    src: url(./fonts/Teko-54d71c9d.woff);
+}
+
+@font-face {
+    font-family: Rubik400;
+    src: url(./fonts/Rubik-Regular-6130b0b9.ttf);
+}
+
+@font-face {
+    font-family: Rubik600;
+    src: url(./fonts/Rubik-SemiBold-029548e6.ttf);
+}
+
+@font-face {
+    font-family: Heavitas;
+    src: url(./fonts/Heavitas.ttf);
+}
+
+@font-face {
+    font-family: Amidone;
+    src: url(./fonts/new-york-7.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(./fonts/Bebas-Regular.ttf);
+}
+
+
+
+
+
+.nameBlueSide {
+    position: absolute;
+    right: -6px;
+    bottom: 18px;
+    display: flex; /* Utiliser Flexbox pour l'alignement */
+    align-items: center; /* Centrer verticalement */
+    font-weight: 1300; /* Style commun */
+    letter-spacing: 0.2px; /* Style commun */
+    font-size: 45px; /* Style commun */
+    font-family: Amidone; /* Style commun */
+    color: white; /* Couleur par défaut (pour BLUE) */
+    border-radius: 30px;
+}
+
+.blue {
+    font-weight: 1300; /* Style commun */
+    letter-spacing: 0.2px; /* Style commun */
+    font-size: 45px; /* Style commun */
+    font-family: Amidone; /* Style commun */
+    color: rgb(255, 255, 255); /* Couleur pour BLUE */
+    text-shadow: #ffffff8e 1px 0 10px;
+
+}
+
+.lite {
+    font-weight: 1300; /* Style commun */
+    letter-spacing: 0.2px; /* Style commun */
+    font-size: 45px; /* Style commun */
+    font-family: Amidone; /* Style commun */
+    color: #5db5e5; /* Couleur pour LITE (bleu) */
+    text-shadow: #5db5e59a 1px 0 10px;
+}
+
+
+
+.discordgg {
+    position: absolute;
+    font-size: 19px;
+    right: 30px;
+    bottom: -15px;
+    color: rgb(173, 173, 173);
+    letter-spacing: 2px;
+    font-family: Bebas;
+} 
+
+.countgg {
+    position: absolute;
+    right: 145px;
+    top: -4px;
+    align-content: flex-start;
+}
+
+.countggg {
+    position: absolute;
+    right: 25px;
+    top: -4px;
+    width: 200px;
+    align-content: flex-start;
+    color: rgba(255, 255, 255, 0.9);
+
+}
+
+.playergg {
+    position: absolute;
+    right: 60px;
+    top: -4px;
+    align-content: flex-start;
+}
+
+.state {
+    position: absolute;
+    right: 40px;
+    top: 3px;
+    width: 1000px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Teko, sans-serif;
+    color: #ffffff; /* Couleur du texte */
+
+}
+
+.bankgg {
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Teko, sans-serif;
+    color: #ffffff; /* Couleur du texte */
+
+}
+
+.blackgg {
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    font-size: 18px;
+    font-family: Teko, sans-serif;
+    color: #ffffff; /* Couleur du texte */
+
+}
+
+.logo {
+    position: absolute;
+    right: -4px;
+    top: -10px;
+    width: 60px;
+    height: 60px;
+}
+
+.imagegroup {
+    position: absolute;
+    right: 170px;
+    top: -5px;
+    height: 15px;
+    width: 15px;
+}
+
+.imageplayer {
+    position: absolute;
+    right: 85px;
+    top: -5px;
+    height: 15px;
+    width: 15px;
+}
+
+.imagecash {
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+
+
+}
+
+.imagebank {
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+
+
+
+}
+
+.logotexte {
+    position: absolute;
+    right: -15px;
+    top: -27px;
+    width: 215px; /* Fixe la largeur */
+    height: auto; /* Conserve les proportions */
+
+
+}
+
+
+.logotexte::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px; /* Facultatif : arrondi doux */
+}
+
+
+
+.imageblack {
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    width: 35px;
+    height: 35px;
+
+
+}
+
+#store-containerr {
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 550px;
+    height: 350px;
+    bottom: calc(50% - 175px);
+    left: calc(50% - 275px);
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(0 3px 10px rgba(15, 239, 255, 0.75));
+    filter: drop-shadow(0 5px 12px rgba(15, 239, 255, 0.75));
+}
+
+#store-containerrr {
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 550px;
+    height: 350px;
+    bottom: calc(50% - 175px);
+    left: calc(50% - 275px);
+    border-radius: 5px;
+    -webkit-filter: drop-shadow(0 3px 10px rgba(15, 239, 255, 0.75));
+    filter: drop-shadow(0 5px 12px rgba(15, 239, 255, 0.75));
+}

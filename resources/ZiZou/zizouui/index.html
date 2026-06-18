@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Screen ZiZou</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const musicList = [
+          './assets/music/load1.mp3',
+          './assets/music/load2.mp3',
+          './assets/music/load3.mp3',
+          './assets/music/load4.mp3',
+          './assets/music/load5.mp3',
+        ];
+        
+        const randomIndex = Math.floor(Math.random() * musicList.length);
+        const randomMusic = musicList[randomIndex];
+        
+        const audioElement = document.getElementById('music');
+        audioElement.src = randomMusic;
+      });
+    </script>
+    <audio id="music" src="" autoplay="true" hidden="true" loop="true"></audio>
+
+    <div class="General">
+      <div id="player-control-container">
+        <div id="player-control">
+          <div class="buttonLinee"></div>
+          <img id="volume-icon" src="./assets/images/volume-low.png" onclick="rangeAffect(0)">
+          <input id="volume-slider" type="range" min="0" max="1" step=".05" value="0.1" onmousemove="rangeAffect(this.value)">
+        </div>
+      </div>
+  
+      <div class="titleBox">
+        <div class="titleTextBox">
+
+          <h2 class="titleText"></h2>
+          
+          <h2 class="titleText2"></h2>
+
+        </div>
+      </div>
+      <div class="bottomSide">
+        <div class="infoBox">
+          <h2 class="infoText"></h2>
+          <p class="infoSubText">
+          </p>
+        </div>
+      </div>
+      <div class="loadSide">
+        <div class="loadTextBox">
+          <div class="loadText">
+            <div class="loadingProgress">
+              <div class="spinner-10"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="loadProgress">
+          <div class="loadBG">
+            <div class="load"></div>
+            <div class="loadLine">
+              <div class="buttonLineee"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <img src="./assets/images/bg.png" alt="" class="Bg" />
+      <p class="titleSubText"></p>
+    </div>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>

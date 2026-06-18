@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>fb_weapon_bag</modelName>
+			<txdName>fb_weapon_bag</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_shopbag</modelName>
+			<txdName>fb_weapon_shopbag</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_chipbag</modelName>
+			<txdName>fb_weapon_chipbag</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_backbag</modelName>
+			<txdName>fb_weapon_backbag</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_medbag</modelName>
+			<txdName>fb_weapon_medbag</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_medbag</modelName>
+			<txdName>fb_weapon_medbag</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_luggage</modelName>
+			<txdName>fb_weapon_luggage</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_jammer</modelName>
+			<txdName>fb_weapon_jammer</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_securitycase</modelName>
+			<txdName>fb_weapon_securitycase</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_toolbox</modelName>
+			<txdName>fb_weapon_toolbox</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>fb_weapon_watering</modelName>
+			<txdName>fb_weapon_watering</txdName>
+			<ptfxAssetName>cut_exile2</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+
+		<Item>
+			<modelName>w_pi_scorpion</modelName>
+			<txdName>w_pi_scorpion</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="30"/>
+		</Item>
+		<Item>
+			<modelName>w_pi_scorpion_Shell</modelName>
+			<txdName>w_pi_scorpion_Shell</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="30"/>
+		</Item>		
+		
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

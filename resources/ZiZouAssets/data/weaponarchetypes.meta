@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+
+		<Item>
+			<modelName>W_LR_BV238</modelName>
+			<txdName>W_LR_BV238</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_FW190BOMB</modelName>
+			<txdName>W_LR_FW190BOMB</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_G4M</modelName>
+			<txdName>W_LR_G4M</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_OHKA</modelName>
+			<txdName>W_LR_OHKA</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="990"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_DM11</modelName>
+			<txdName>W_LR_DM11</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		
+		<Item>
+			<modelName>tigre</modelName>
+			<txdName>tigre</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_KH22</modelName>
+			<txdName>W_LR_KH22</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_BOMB22</modelName>
+			<txdName>W_LR_BOMB22</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_HE111</modelName>
+			<txdName>W_LR_HE111</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_R40R</modelName>
+			<txdName>W_LR_R40R</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_AIMF22</modelName>
+			<txdName>W_LR_AIMF22</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_MR</modelName>
+			<txdName>W_LR_MR</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="1000"/>
+		</Item>
+		<Item>
+			<modelName>SU33M</modelName>
+			<txdName>SU33M</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+		<Item>
+			<modelName>SU33M2</modelName>
+			<txdName>SU33M2</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_MPBM</modelName>
+			<txdName>W_LR_MPBM</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_M_AIM9</modelName>
+			<txdName>W_LR_M_AIM9</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_FAEB</modelName>
+			<txdName>W_LR_FAEB</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+		<Item>
+			<modelName>W_LR_F_AIM9</modelName>
+			<txdName>W_LR_F_AIM9</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="100"/>
+		</Item>
+		<Item>
+			<modelName>W_Boats_DeluxoNULL</modelName>
+			<txdName>W_Boats_DeluxoNULL</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="500"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

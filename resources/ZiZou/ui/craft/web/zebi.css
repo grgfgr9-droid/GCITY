@@ -1,0 +1,252 @@
+@font-face {
+    font-family: Heavitas;
+    src: url(../../hud/html/css/fonts/Heavitas.ttf);
+}
+
+@font-face {
+    font-family: Amidone;
+    src: url(../../hud/html/css/fonts/new-york-7.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(../../hud/html/css/fonts/Bebas-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;900&display=swap');
+
+.body {
+    position: absolute;
+    display: flex;
+    width: 1600px; 
+    top: 50%;
+    left: 50%;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.76);
+    overflow: hidden; 
+}
+
+
+#background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1540px; 
+    height: 910px; 
+    background: 
+    radial-gradient(13.76% 17.09% at 100% -1.57%, rgba(0, 102, 255, 0.26) 0%, rgba(255, 223, 0, 0) 100%), 
+    radial-gradient(243.42% 109.61% at -16.07% 61.25%, rgba(0, 81, 255, 0.17) 0%, rgba(255, 223, 0, 0) 100%), 
+    rgba(2, 1, 3, 0.9);
+      
+    border-radius: 30px;
+    border-top: 0.4vh solid #006eff80; /* or doré */
+    box-shadow: 0px 0px 30px 2px rgba(0, 119, 255, 0.3);
+    z-index: -2;
+}
+
+.background-title {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 2.7em;
+    color: rgb(255, 255, 255); 
+    text-shadow: rgba(0, 119, 255, 0.7) 1px 0 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold; 
+    z-index: 1;
+}
+
+#itemsContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 20px;
+    transform: translate(-550px, 85px);
+    gap: 20px; 
+    width: 100%; 
+    height: auto;
+    max-width: 1540px; 
+    position: absolute;
+    top: 6vh;
+}
+
+/* Style des éléments dans le container */
+.carrer {
+    border-top: 0.2vh solid #006eff80;
+    background-color: rgba(0, 0, 0, 0.295);
+    width: calc(19% - 20px); 
+    height: 32vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Espacement entre les lignes */
+}
+
+
+
+
+
+.ingredients-container {
+    position: absolute;
+    transform: translateY(25px);
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 80px; 
+    cursor: none;
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+}
+
+.img-ingred {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.ingred1 {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+}
+
+.nameingred1 {
+    font-size: 0.9em;
+    color: white;
+}
+
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: translate(-12%, -12%);
+    position: absolute;
+    left: 15%;
+    bottom: 50%;
+    font-size: larger;
+    cursor: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.barre {
+    position: absolute;
+    bottom: 55%;
+    left: 8%;
+    width: 0.250vh;
+    height: 1.5vh;
+    background-color: #006eff80;
+}
+
+.perso {
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 6px;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: #006eff80;
+    box-shadow: 0 1px 14px 0 #0059ff8a;
+    transition: color 0.2s linear, background-color 0.2s linear;
+    border: none;
+    cursor: pointer;
+    bottom: 0%;
+    margin-bottom: 10px;
+}
+
+.perso:hover {
+    background-color: #0059ff8a;
+    transition: color 0.2s linear, background-color 0.2s linear;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.titre {
+    position: absolute;
+    top: 0%;
+    cursor: none;
+    color: white;
+    border-radius: 0.5vh;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.422);
+    padding: 2vh;
+    padding: 4px;
+
+}
+
+.revo {
+    position: absolute;
+    bottom: 55%;
+    margin-top: 3.65vh;
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.text-close {
+    position: relative;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16px;  /* Réduire la taille du texte */
+    padding-left: 2vh; /* Espace entre la flèche et le texte */
+    max-width: 80%; /* Limiter la largeur pour éviter que le texte dépasse */
+    overflow: hidden; /* Assurer que le texte qui dépasse soit masqué */
+    text-overflow: ellipsis; /* Ajouter des points de suspension si le texte est trop long */
+}
+
+.close {
+    display: flex;
+    align-items: center; /* Centrer verticalement la flèche et le texte */
+    justify-content: flex-start; /* Assurer que tout soit aligné à gauche */
+    position: absolute;
+    top: 87%;  /* Baisser légèrement le bouton */
+    left: 10.3%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    width: auto; /* Laisse la largeur s'ajuster automatiquement selon le contenu */
+    height: 4vh;  /* Réduire la hauteur du bouton */
+    padding: 0 10px; /* Ajouter un peu de padding pour donner de l'espace au texte et à la flèche */
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 0.75vh;
+    border: none;
+}
+
+.fa-solid {
+    font-size: 1.5vh; /* Réduire la taille de la flèche */
+    color: white;
+    margin-right: 10px; /* Espacement entre la flèche et le texte */
+}
+
+
+
+
+.close:hover {
+    background-color: rgba(0, 0, 0, 0.76);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.spawn:hover {
+    background-color: rgba(0, 0, 0, 0.377);
+    transition: (0.125s);
+    animation: normal;
+    font-family: "Sigmar", serif;
+    margin-bottom: 1.25vh;
+}
